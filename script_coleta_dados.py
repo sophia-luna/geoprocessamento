@@ -9,43 +9,34 @@ SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_ANON_KEY)
 
-# Mapeamento Bilateral do Eixo da Av. 85 - Com Afastamento Lateral Agressivo (Offset)
 pontos_monitoramento = [
     # 1. Praça Cívica (Início)
-    {"nome": "Av. 85 - Praça Cívica (Sentido Sul)", "lat": "-16.6814", "lon": "-49.2570"},
-    {"nome": "Av. 85 - Praça Cívica (Sentido Centro)", "lat": "-16.6818", "lon": "-49.2566"},
+    {"nome": "Av. 85 - Praça Cívica (Sentido Sul)", "lat": "-16.6815", "lon": "-49.2567"}, 
+    {"nome": "Av. 85 - Praça Cívica (Sentido Centro)", "lat": "-16.6815", "lon": "-49.2569"},
 
-    # 2. Cruzamento Av. Assis Chateaubriand
-    {"nome": "Av. 85 - Assis Chateaubriand (Sentido Sul)", "lat": "-16.6863", "lon": "-49.2594"},
-    {"nome": "Av. 85 - Assis Chateaubriand (Sentido Centro)", "lat": "-16.6867", "lon": "-49.2590"},
+    # 2. Rua 103
+    {"nome": "Av. 85 - Rua 103 (Sentido Sul)", "lat": "-16.6864", "lon": "-49.2594"},  
+    {"nome": "Av. 85 - Rua 103 (Sentido Centro)", "lat": "-16.6863", "lon": "-49.2596"},
 
     # 3. Praça do Ratinho
-    {"nome": "Av. 85 - Praça do Ratinho (Sentido Sul)", "lat": "-16.6915", "lon": "-49.2618"},
-    {"nome": "Av. 85 - Praça do Ratinho (Sentido Centro)", "lat": "-16.6919", "lon": "-49.2614"},
+    {"nome": "Av. 85 - Praça do Ratinho (Sentido Sul)", "lat": "-16.6911", "lon": "-49.2620"}, 
+    {"nome": "Av. 85 - Praça do Ratinho (Sentido Centro)", "lat": "-16.6911", "lon": "-49.2622"},
 
-    # 4. Cruzamento Av. Mutirão
-    {"nome": "Av. 85 - Mutirão (Sentido Sul)", "lat": "-16.7009", "lon": "-49.2648"},
-    {"nome": "Av. 85 - Mutirão (Sentido Centro)", "lat": "-16.7013", "lon": "-49.2644"},
+     # 4. Cruzamento Av. T-9 (Marista/Bueno)
+    {"nome": "Av. 85 - Av. T-9 (Sentido Sul)", "lat": "-16.6954", "lon": "-49.2640"}, 
+    {"nome": "Av. 85 - Av. T-9 (Sentido Centro)", "lat": "-16.6954", "lon": "-49.2642"},
 
-    # 5. Cruzamento Av. T-9 (Marista/Bueno)
-    {"nome": "Av. 85 - Av. T-9 (Sentido Sul)", "lat": "-16.7040", "lon": "-49.2654"},
-    {"nome": "Av. 85 - Av. T-9 (Sentido Centro)", "lat": "-16.7044", "lon": "-49.2650"},
+    # 5. Cruzamento Av. Mutirão
+    {"nome": "Av. 85 - Mutirão (Sentido Sul)", "lat": "-16.7033", "lon": "-49.2643"},  
+    {"nome": "Av. 85 - Mutirão (Sentido Centro)", "lat": "-16.7032", "lon": "-49.2640"}, 
 
     # 6. Cruzamento Rua T-11
-    {"nome": "Av. 85 - Rua T-11 (Sentido Sul)", "lat": "-16.7086", "lon": "-49.2660"},
-    {"nome": "Av. 85 - Rua T-11 (Sentido Centro)", "lat": "-16.7090", "lon": "-49.2656"},
+    {"nome": "Av. 85 - Rua T-11 (Sentido Sul)", "lat": "-16.7068", "lon": "-49.2642"},  
+    {"nome": "Av. 85 - Rua T-11 (Sentido Centro)", "lat": "-16.7068", "lon": "-49.2639"},
 
-    # 7. Viaduto Av. T-63
-    {"nome": "Av. 85 - Viaduto T-63 (Sentido Sul)", "lat": "-16.7117", "lon": "-49.2664"},
-    {"nome": "Av. 85 - Viaduto T-63 (Sentido Centro)", "lat": "-16.7121", "lon": "-49.2660"},
-
-    # 8. Campo do Goiás (Serrinha)
-    {"nome": "Av. 85 - Campo do Goiás (Sentido Sul)", "lat": "-16.7159", "lon": "-49.2668"},
-    {"nome": "Av. 85 - Campo do Goiás (Sentido Centro)", "lat": "-16.7163", "lon": "-49.2664"},
-
-    # 9. Fim da Av. 85 x Edmundo P. de Abreu
-    {"nome": "Av. 85 - Final Serrinha (Sentido Sul)", "lat": "-16.7212", "lon": "-49.2678"},
-    {"nome": "Av. 85 - Final Serrinha (Sentido Centro)", "lat": "-16.7216", "lon": "-49.2674"}
+    # 7. Fim da Av. 85 x Edmundo P. de Abreu
+    {"nome": "Av. 85 - Final Serrinha (Sentido Sul)", "lat": "-16.7095", "lon": "-49.2640"}, 
+    {"nome": "Av. 85 - Final Serrinha (Sentido Centro)", "lat": "-16.7095", "lon": "-49.2638"},
 ]
 
 def coletar_e_salvar():
